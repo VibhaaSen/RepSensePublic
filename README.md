@@ -1,4 +1,4 @@
-# RepSensePublic 🏋️‍♂️
+# RepSensePublic 🏋
 
 RepSense is a custom-engineered, wearable smart squat tracker designed to provide real-time biomechanical feedback for strength training. By utilizing a 6-axis IMU sensor mounted rigidly to the user, the device continuously monitors femur orientation to accurately track squat depth, count valid repetitions, and filter out unrelated movement.
 
@@ -6,18 +6,18 @@ RepSense is a custom-engineered, wearable smart squat tracker designed to provid
 
 ---
 
-## 🚀 Engineering Highlights & Technical Overview
+##  Engineering Highlights & Technical Overview
 
 This project showcases a complete full-stack hardware product development lifecycle, including custom PCB design, circuit protection, component selection, and mechanical enclosure troubleshooting.
 
-### 🧠 System Architecture & State Machine
+###  System Architecture & State Machine
 The device leverages an algorithmic state-machine to track the human body through the distinct phases of a squat:
 1. **Upright Standing Baseline:** Establishes the starting reference plane.
 2. **Eccentric (Downward) Phase:** Monitors continuous angular rotation.
 3. **Depth Threshold Validation:** Pinpoints exactly when the femur passes parallel.
 4. **Concentric (Upward) Phase:** Confirms a completed repetition cycle.
 
-### 🔌 Custom Hardware Design & BOM
+###  Custom Hardware Design & BOM
 The project integrates a **Seeed Studio XIAO** microcontroller over a shared $I^2C$ bus with:
 * **LSM6DS3 6-Axis IMU** for rotational motion tracking.
 * **0.96" OLED Display** for user interface and real-time rep counting.
@@ -25,7 +25,7 @@ The project integrates a **Seeed Studio XIAO** microcontroller over a shared $I^
 
 ---
 
-## 🛠️ Real-World Engineering Challenges Overcome
+##  Real-World Engineering Challenges Overcome
 
 ### 1. Low-Profile Enclosure Clearance Constraint
 **The Problem:** Standard plastic female DuPont wire housings proved too tall ($1.5\text{ cm}$ to $2\text{ cm}$) to clear the lid of the ultra-compact clear wearable housing. 
