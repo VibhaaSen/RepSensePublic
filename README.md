@@ -44,5 +44,13 @@ The project integrates a **Seeed Studio XIAO** microcontroller over a shared $I^
 
 ---
 
+## 📅 Engineering Dev Log & Updates
+
+### 🟢 July 2026 — Milestone 1: Hardware Assembly & Enclosure Testing
+* **Status:** Physical PCB population complete. 
+* **Progress:** Successfully soldered all discrete components including the gate pull-down resistor ($R_1$), $I^2C$ pull-ups ($R_2, R_3$), the 2N7000 MOSFET ($Q_1$), and the 1N4148 flyback protection diode ($D_1$). 
+* **Key Milestone:** The vibration motor has been hardwired directly to the `J3` pads. Mechanical clearance issues with the shallow enclosure lid were successfully bypassed via direct-soldering flying leads to the IMU (`J4`) and OLED (`J5`), successfully lowering the vertical profile to fit the case.
+* **Next Steps:** Awaiting arrival of the Seeed Studio XIAO microcontroller board to begin firmware deployment, axis calibration, and state-machine threshold tuning.
+---
 ## 💼 Professional Contact
 If you are a recruiter or hardware engineer interested in seeing a live code walkthrough or looking at the schematic architecture via a secure screen-share, please feel free to reach out directly!
