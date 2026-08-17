@@ -44,13 +44,18 @@ The project integrates a **Seeed Studio XIAO** microcontroller over a shared $I^
 
 ---
 
-## 📅 Engineering Dev Log & Updates
+## 🟢 Recent Milestones & Hardware Testing
 
-### 🟢 July 2026 — Milestone 1: Hardware Assembly & Enclosure Testing
-* **Status:** Physical PCB population complete. 
-* **Progress:** Successfully soldered all discrete components including the gate pull-down resistor ($R_1$), $I^2C$ pull-ups ($R_2, R_3$), the 2N7000 MOSFET ($Q_1$), and the 1N4148 flyback protection diode ($D_1$). 
-* **Key Milestone:** The vibration motor has been hardwired directly to the `J3` pads. Mechanical clearance issues with the shallow enclosure lid were successfully bypassed via direct-soldering flying leads to the IMU (`J4`) and OLED (`J5`), successfully lowering the vertical profile to fit the case.
-* **Next Steps:** Awaiting arrival of the Seeed Studio XIAO microcontroller board to begin firmware deployment, axis calibration, and state-machine threshold tuning.
+### Simulated Verification (Wokwi)
+* **Status:** Successfully validated in simulation.
+* **Details:** Verified firmware logic, I2C routing, and real-time OLED pitch angle visualization using Wokwi. Sensor data streams accurately across the custom state machine setup.
+
+### Real-World Hardware & Enclosure Fit Challenges
+* **Issue 1 (PCB Form Factor):** The physical width of the MPU6050 module footprint did not align cleanly with the PCB pads.
+* **Issue 2 (Enclosure Clearance):** Attaching soldered extension jumper wires created too much bulk, preventing the wearable housing from snapping shut.
+* **Resolution / Next Revision Strategy:**
+  * **V1 Workaround:** Direct-soldered low-profile/flying lead connections flat to the module to minimize clearance height.
+  * **V2 Hardware Optimization:** Updating the PCB layout to natively accommodate the exact footprint pitch and horizontal orientation of the IMU, eliminating wire extensions entirely.
 ---
 ## 💼 Professional Contact
 If you are a recruiter or hardware engineer interested in seeing a live code walkthrough or looking at the schematic architecture via a secure screen-share, please feel free to reach out directly!
